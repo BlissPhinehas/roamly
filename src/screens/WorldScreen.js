@@ -495,7 +495,7 @@ export default function WorldScreen() {
                 if (checkPin(caregiverPin)) {
                   setCaregiverPinVisible(false);
                   setCaregiverPin('');
-                  Linking.openURL('http://localhost:3000');
+                  Linking.openURL('https://roamly-dashboard.vercel.app');
                 } else {
                   setCaregiverPinError(true);
                   setCaregiverPin('');
