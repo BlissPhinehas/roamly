@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "Roamly",
+    "slug": "roamly-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.roamly.app"
+    },
+    "android": {
+      "package": "com.roamly.app"
+    },
+    "plugins": [
+      "expo-audio"
+    ]
+  }
+}

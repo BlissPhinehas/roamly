@@ -165,7 +165,7 @@ const ZONES = [
 
 // Pre-require all SVG assets statically
 const SVG_ASSETS = {
-  mascotDay:   require('../assets/illustrations/designs/Dogpaw-mascot.svg'),
+  mascotDay:   require('../assets/illustrations/designs/Dog paw-cuate(the mascot).svg'),
   mascotNight: require('../assets/illustrations/greetings/Sleeping baby-rafiki (1)(good night).svg'),
   nature:      require('../assets/illustrations/nature/Nature-pana.svg'),
   cherryTree:  require('../assets/illustrations/greetings/cherry tree-pana.svg'),
