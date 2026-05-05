@@ -123,7 +123,7 @@ const ZONES = [
     color:     '#FFD166',
     textColor: '#7A5C00',
     bg:        '#FFFBEE',
-    illustration: require('../assets/illustrations/emotions/Swing-rafiki(excited Emotion).svg'),
+    illustration: 1,  // Maps to illustrationMap[1]
   },
   {
     id:        'feelings',
@@ -132,7 +132,7 @@ const ZONES = [
     color:     '#C9B8FF',
     textColor: '#4527A0',
     bg:        '#F3F0FF',
-    illustration: require('../assets/illustrations/emotions/Happy baby-cuate.svg'),
+    illustration: 2,
   },
   {
     id:        'bodymap',
@@ -141,7 +141,7 @@ const ZONES = [
     color:     '#FFB8A8',
     textColor: '#8B2500',
     bg:        '#FFF3F0',
-    illustration: require('../assets/illustrations/emotions/In love-pana(i want a hug).svg'),
+    illustration: 3,
   },
   {
     id:        'learn',
@@ -150,7 +150,7 @@ const ZONES = [
     color:     '#AED9F7',
     textColor: '#0D47A1',
     bg:        '#E4F4FF',
-    illustration: require('../assets/illustrations/designs/People celebrating Holi Festival-amico.svg'),
+    illustration: 4,
   },
   {
     id:        'myroamly',
@@ -159,13 +159,22 @@ const ZONES = [
     color:     '#B8F0C8',
     textColor: '#1B5E3B',
     bg:        '#F0FFF5',
-    illustration: require('../assets/illustrations/emotions/Hide and seek game-cuate(playful).svg'),
+    illustration: 5,
   },
 ];
 
-// Pre-require all SVG assets statically
+// Direct requires for SVG assets
+const illustrationMap = {
+  1: require('../assets/illustrations/emotions/Swing-rafiki(excited Emotion).svg'),
+  2: require('../assets/illustrations/emotions/Happy baby-cuate.svg'),
+  3: require('../assets/illustrations/emotions/In love-pana(i want a hug).svg'),
+  4: require('../assets/illustrations/designs/People celebrating Holi Festival-amico.svg'),
+  5: require('../assets/illustrations/emotions/Hide and seek game-cuate(playful).svg'),
+};
+
+// SVG asset paths
 const SVG_ASSETS = {
-  mascotDay:   require('../assets/illustrations/designs/Dogpaw-mascot.svg'),
+  mascotDay:   require('../assets/illustrations/designs/Dog paw-cuate(the mascot).svg'),
   mascotNight: require('../assets/illustrations/greetings/Sleeping baby-rafiki (1)(good night).svg'),
   nature:      require('../assets/illustrations/nature/Nature-pana.svg'),
   cherryTree:  require('../assets/illustrations/greetings/cherry tree-pana.svg'),
@@ -495,7 +504,7 @@ export default function WorldScreen() {
                 if (checkPin(caregiverPin)) {
                   setCaregiverPinVisible(false);
                   setCaregiverPin('');
-                  Linking.openURL('http://localhost:3000');
+                  Linking.openURL('https://roamly-dashboard.vercel.app');
                 } else {
                   setCaregiverPinError(true);
                   setCaregiverPin('');
@@ -764,12 +773,18 @@ function ZoneBubble({ zone, anim, onPress }) {
 
   async function loadIllustration() {
     try {
-      const uri  = Image.resolveAssetSource(zone.illustration).uri;
-      const res  = await fetch(uri);
+      const asset = illustrationMap[zone.illustration];
+      if (!asset) {
+        console.log('No illustration found for', zone.id);
+        return;
+      }
+      // Asset is a require() call - get its URI
+      const uri = Image.resolveAssetSource(asset).uri;
+      const res = await fetch(uri);
       const text = await res.text();
       setSvgXml(text);
     } catch (e) {
-      console.log('Zone illustration failed', zone.id, e);
+      console.log('Zone illustration failed', zone.id, e.message || e);
     }
   }
 
