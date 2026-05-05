@@ -275,19 +275,21 @@ Roamly is what I wish had existed for our family.
 - Making it free for every family that needs it
 
 ---
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/1d6c6180-90f2-48d0-85e2-8af189f94d1f" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/15067d7a-2c5c-47ca-ae48-216e5859f284" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/3db44ed2-c457-4995-a143-09e184b7995d" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/41e9955e-afd3-47e6-a0e6-a224c116504b" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/79794348-56e7-4bfa-8799-af644afaeba4" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/9b2e5f42-c731-4f75-8ceb-3f80049bc3af" />
 
-![My Journey](<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/164acb50-f20f-4805-9c86-31de08931b88" />
-)
-![Emotions](<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/6f78001c-bea5-4ddf-aa8b-3c6a06bcf029" />
-)
-![AAC Sentence Builder](<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/a0702537-b736-4c82-8e9f-c6bc8e65ffec" />
-)
-![Play and learn]<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/1d1b7697-01bb-40d3-b0fd-4c50b9f536a9" />
-)
-![Landing Page](<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/b5b465e9-98ba-46c6-b94c-70d58e573b0f" />
-)
-![Profile customization](<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/bfb72d63-cde3-48bb-b0bd-cbd2bb33a55c" />
-)
+
+
+
+
+
+
+
+
 ---
 
 ## License
