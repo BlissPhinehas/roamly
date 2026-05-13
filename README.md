@@ -275,12 +275,21 @@ Roamly is what I wish had existed for our family.
 - Making it free for every family that needs it
 
 ---
-![My Journey](image.png)
-![Emotions](image-1.png)
-![AAC Sentence Builder](image-2.png)
-![Play and learn](image-3.png)
-![Landing Page](image-4.png)
-![Profile customization](image-5.png)
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/1d6c6180-90f2-48d0-85e2-8af189f94d1f" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/15067d7a-2c5c-47ca-ae48-216e5859f284" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/3db44ed2-c457-4995-a143-09e184b7995d" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/41e9955e-afd3-47e6-a0e6-a224c116504b" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/79794348-56e7-4bfa-8799-af644afaeba4" />
+<img width="674" height="1462" alt="image" src="https://github.com/user-attachments/assets/9b2e5f42-c731-4f75-8ceb-3f80049bc3af" />
+
+
+
+
+
+
+
+
+
 ---
 
 ## License
